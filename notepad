@@ -1,0 +1,27 @@
+LESSON 01: Backend Development (Roadmap)
+
+=> 2 major components:
+1. A programming language (JS)
+   (on a framework like express for making router or servers)
+2. A database (Mongo, My SQL etc) master any one
+   (ORM ODM like mongoose)
+
+database is always in another continent
+
+- A Javascript based backend
+Data File Third party (API)
+
+- A JS Runtime: Nodejs / Deno / Bun
+package.json .env (Readme, git, lint, prettier etc)
+
+- src
+index => DB connects    APP => config, cookie    constants => enums, DB name
+
+standard structure:
+- DB
+- Models
+- Controllers
+- Routers
+- Middlewares
+- Utils
+- More (depends)
