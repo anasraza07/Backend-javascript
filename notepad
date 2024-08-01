@@ -1,41 +1,32 @@
-LESSON 01: REACT JS roadmap | chai aur react series
+LESSON 01: Backend Development (Roadmap)
 
-Why to learn React ? 
-    - hype, job, trend, build UI
-    - makes easy to manage & build complex frontend
+=> 2 major components:
+1. A programming language (JS)
+   (on a framework like express for making router or servers)
+2. A database (Mongo, My SQL etc) master any one
+   (ORM ODM like mongoose)
 
-When should I learn React ?
-    - After mastering JS
-    - most project dont need react in initial phase
+database is always in another continent
 
-Why react was created ?
-    - Fanatam (ghost) message problem    
-    - facebook (chat ui)
-    - No consistency in UI
-    - khan academy => unsplash
+- A Javascript based backend
+Data File Third party (API)
 
-Dont learn React if:
-    - you dont know how JS works or DOM works
+- A JS Runtime: Nodejs / Deno / Bun
+package.json .env (Readme, git, lint, prettier etc)
 
-React learning Process
-    1. go in-depth (Babel, fibre, Virtual DOM, diff algo, hydration)
-    2. by making projects (one topic at a time)
-    projects like Todo, Calculator, Github API
+- src
+index => DB connects    APP => config, cookie    constants => enums, DB name
 
-React is a Library
-    - frameworks (military) VS library (cool dude)
+standard structure:
+- DB
+- Models
+- Controllers
+- Routers
+- Middlewares
+- Utils
+- More (depends)
 
-Topic to learn:
-    - core of React (state or UI manipulation, JSX)
-    - component Reusability
-    - Reusing of component (Props)
-    - How to propagate change (hooks)
+LESSON 03: Fullstack proxy and CORS
+CORS = ghr ke andr sbko allow mt kro, agr backend aur frontend ka url alag hai tb bhi usko cross origin maana jaata hai, agr port alag hai tb bhi wo cross origin hai   
 
-Additional Addon to React   
-    - Router (React dont have router)
-    - state management (React had not state management)
-        - Redux, Redux toolkit, zustand, context API
-    - class based component
-        - legacy code
-    BAAS (Backend as a service) Apps
-        -social media clone, e-commerce apps
+ab CORS ke 2 solutions hain 1. server pe jaakr whitelist krdo aur 2. proxy jo backend ke url ko append krdeta hai aur yehi show krta hai jese frontend isi url se aaraha hai
