@@ -1,6 +1,7 @@
 LESSON 01: Backend Development (Roadmap)
 
 => 2 major components:
+
 1. A programming language (JS)
    (on a framework like express for making router or servers)
 2. A database (Mongo, My SQL etc) master any one
@@ -9,15 +10,16 @@ LESSON 01: Backend Development (Roadmap)
 database is always in another continent
 
 - A Javascript based backend
-Data File Third party (API)
+  Data File Third party (API)
 
 - A JS Runtime: Nodejs / Deno / Bun
-package.json .env (Readme, git, lint, prettier etc)
+  package.json .env (Readme, git, lint, prettier etc)
 
 - src
-index => DB connects    APP => config, cookie    constants => enums, DB name
+  index => DB connects APP => config, cookie constants => enums, DB name
 
 standard structure:
+
 - DB
 - Models
 - Controllers
@@ -27,6 +29,35 @@ standard structure:
 - More (depends)
 
 LESSON 03: Fullstack proxy and CORS
-CORS = ghr ke andr sbko allow mt kro, agr backend aur frontend ka url alag hai tb bhi usko cross origin maana jaata hai, agr port alag hai tb bhi wo cross origin hai   
+CORS = ghr ke andr sbko allow mt kro, agr backend aur frontend ka url alag hai tb bhi usko cross origin maana jaata hai, agr port alag hai tb bhi wo cross origin hai
 
 ab CORS ke 2 solutions hain 1. server pe jaakr whitelist krdo aur 2. proxy jo backend ke url ko append krdeta hai aur yehi show krta hai jese frontend isi url se aaraha hai
+
+LESSON 04: Data modelling for backend with mongoose
+Backend banaate hue sbse achi practice hai question krna ke 'DATA KIA STORE KRNE WAALE HAIN HAM'
+Data modelling means data ka poora structure define krna
+
+Tools:
+
+- Moon Modeler
+- eraser.io => plus - diagram as code - entity relationship
+
+sbse pehle us screen ki fikr karen ke Data save kese hoga
+
+LESSON 05: Ecommerce and hospital management data modelling
+Buffers = images, pdfs etc
+images store krte hain aws bucket or cloudinary pr jahan se url milta hai phr wo database main save hota hai 
+enum = choices
+
+LESSON 06: 
+.gitkeep file
+.gitignore generator
+--watch nodejs ki script hai but prodcution main itna work nhi kr rahi
+devdependency sirf development mode ke liye hoti hai
+git bash commands:
+touch command for add file
+mkdir command for add folder
+rm for deleting any file or folder
+
+
+
