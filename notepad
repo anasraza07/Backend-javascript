@@ -29,7 +29,7 @@ standard structure:
 - More (depends)
 
 LESSON 03: Fullstack proxy and CORS
-CORS = ghr ke andr sbko allow mt kro, agr backend aur frontend ka url alag hai tb bhi usko cross origin maana jaata hai, agr port alag hai tb bhi wo cross origin hai
+CORS = ghr ke andr sbko allow mt kro, agr backend aur frontend ka url alag hai to usko cross origin maana jaata hai, agr port alag hai tb bhi wo cross origin hai
 
 ab CORS ke 2 solutions hain 1. server pe jaakr whitelist krdo aur 2. proxy jo backend ke url ko append krdeta hai aur yehi show krta hai jese frontend isi url se aaraha hai
 
@@ -46,10 +46,10 @@ sbse pehle us screen ki fikr karen ke Data save kese hoga
 
 LESSON 05: Ecommerce and hospital management data modelling
 Buffers = images, pdfs etc
-images store krte hain aws bucket or cloudinary pr jahan se url milta hai phr wo database main save hota hai 
+images store krte hain aws bucket or cloudinary pr jahan se url milta hai phr wo database main save hota hai
 enum = choices
 
-LESSON 06: 
+LESSON 06:
 .gitkeep file
 .gitignore generator
 --watch nodejs ki script hai but prodcution main itna work nhi kr rahi
@@ -58,6 +58,43 @@ git bash commands:
 touch command for add file
 mkdir command for add folder
 rm for deleting any file or folder
+
+LESSON 07:
+atlas mongodb ki eik sub-service hai jo online database dete hain
+behind the scene ye aws ke paas jaata hai wahan jo iske softwares hai jitni requiremnets hain un sbko connect krta hai
+mongodb main enter krne ke liye atlas se 2 cheezen chahiye
+
+1. ip address allow hona chahiye ke acces krpao aap
+2. email password sahi hona chahiye, url bhi hona chahiye
+   production grade main ham kbhi bhi allow ip address access from anywhere nhi krte
+
+database connect krne ke 2 major tareeqay hain:
+
+1. direct index file main function banaa kr execute krdo
+2. alag db folder main function banao aur index file main import krke execute krdo - clean & professional code
+
+database se jb bhi baat krni ho problems aaskti hain isi liye hamesha try catch main wrap krke rkho us code ko
+database is always in another continent so async await use krna hi hai
+
+process nodejs ke andr hota hai jo hamara current app chal rahi hoti hai wo eik naa eik process pe chalti hai ye uska reference hai
+
+sbse first file jo load horahi hai wahi env varivales load krwaane chahiye taake hr jaga spread hojayen
+
+
+LESSON 08:
+most of the time middlewares ya configurations ke liye app.use() istemaal hota 
+hai
+
+data bht tarh ka bht jaga se aata hai jese url se, form se, json main, body se bhi aaskta hai so us data ki PREPARATION:
+app.use(express.json()) = main json ko accept kr raha hu
+app.use(express.json({limit: "16kb"})) itna hi data aasakega phr 'ye kch common options milte hain docs main prhne prhte hain'
+app.use(express.urlencoded) = url se data aaskta hai to smjhna usko express ok
+app.use(express.urlencoded({extended: true, limit: "16kb"})) = aap objects ke andr bhi objects de paate ho nested objects de skte ho
+app.use(express.static("public")) = public assets kisi ke liye bhi access krne ke liye
+app.use(cookieParse()) = user ke browser se uski cookies access kr pau aur store bhi kr pau mtlb curd operation basically perform kr pau
+middlewares kch naa kch check krne ke liye response bhejne se pehle lagaye jaate hain
+(err, req, res, next) 
+
 
 
 
