@@ -95,6 +95,9 @@ app.use(cookieParse()) = user ke browser se uski cookies access kr pau aur store
 middlewares kch naa kch check krne ke liye response bhejne se pehle lagaye jaate hain
 (err, req, res, next) 
 
+LESSON 09:
+searching field enable krni ho to index use krna zaada optimized hai
+jwt eik bearer token hai, eik chaabi ki tarh hai jo bhi bhejega data usko mil jayega
 
 
 
