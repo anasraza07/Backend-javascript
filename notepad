@@ -100,4 +100,75 @@ searching field enable krni ho to index use krna zaada optimized hai
 jwt eik bearer token hai, eik chaabi ki tarh hai jo bhi bhejega data usko mil jayega
 
 
+LESSON 10:
+ye ab tk sirf configurations and production grade setup hua hai
+multer file ko local system maain save karega aur phr cloudinary isko aws ya jahan bhi cloud main save karega then ham apne paas se delete maardete hain
+Multer Disk Storage: File disk par save hoti hai, permanent storage ke liye use hota hai.
+Multer Memory Storage: File RAM mein store hoti hai, temporary processing ke liye use hota hai
 
+
+LESSON 11:
+http main jo data hai wo same as it is jaata hai, but https main jo 's' hai wo data main ek layer lagaadeta hai usko encrypt krdeta hai
+HTTP = hyper text transfer protocol
+http headers => metadata = data ke baare main data
+sent along with both req and res
+
+usecase of headers:
+caching, authentication, manage state etc
+
+request headers => from client
+response headers => from server
+representation headers => encoding / compression
+payload headers => data
+
+most common headers:
+accept: application/json
+user-agent = konsi application se request aayi hai
+authorization: Bearer token
+content-type = images or pdfs etc
+cookie: {cookie details info}
+cache-control = data kb expire krna hai network se
+
+header information:
+CORS
+access-control-allow-origin
+access-control-allow-credentials
+access-control-allow-method
+
+Security
+Cross-Origin-Embedder-Policy
+Cross-Origin-Opener-Policy
+Content-Security-Policy
+X-XSS-Protection
+
+HTTP methods
+GET => retrieve
+HEAD => no message body (response header only)
+OPTIONS => what operations are available
+TRACE => loopback test (get some data), debugging
+DELETE => remove
+PUT => replace a resource
+POST => add
+PATCH => change a part of resource
+
+HTTPS status code
+1xx informational
+2xx success
+3xx redirection
+4xx client error
+5xx server error
+
+standarized:
+100 continue
+102 processing
+200 ok
+201 created
+202 accepted
+307 temporary redirect
+308 permanent redirect
+400 bad request
+401 unauthorized
+402 payment required
+404 not found
+500 internal server error
+504 gateway timeout

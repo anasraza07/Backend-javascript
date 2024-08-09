@@ -49,7 +49,7 @@ const userSchema = new Schema(
   { timestamps: true }
 );
 
-// mongoose hooks
+// mongoose hooks: password bycrpting
 userSchema.pre("save", async function () {
   if (!this.isModified("password")) return next();
 
@@ -57,6 +57,7 @@ userSchema.pre("save", async function () {
   next();
 });
 
+// password checking
 userSchema.methods.isPasswordCorrect = async function (password) {
   return await bcrypt.compare(password, this.password);
 };
